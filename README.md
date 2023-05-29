@@ -203,3 +203,17 @@ jobs:
             cd flask_app_ci
             echo ${{ secrets.PASSWORD }} | sudo -S docker-compose up -d
 ```
+
+
+17. Загружаем репозиторий на гитхаб с задокенным action.yaml. И делаем секреты для:
+
+        DOCKER_TOKEN - создаем в настройка Docker Hub
+        DOCKER_USERNAME - имя пользователя в Docker Hub
+        HOST - из Yandex Cloud (IPv4)
+        USERNAME - имя пользователя на ВМ
+        PASSWORD - пароль от пользователя на ВМ
+        DB_USER - имя полльзователя БД
+        DB_PASSWORD - пароль от БД
+        DB_NAME - название БД
+        
+        
